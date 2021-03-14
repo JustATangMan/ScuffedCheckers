@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
+
 public class GridPanel extends JPanel{
 
     MouseAdapter ma;
@@ -74,6 +75,7 @@ public class GridPanel extends JPanel{
         pieces.add(new StrdPiece(6, 1, 1));
         pieces.add(new StrdPiece(7, 0, 1));
         pieces.add(new StrdPiece(7, 2, 1));
+        pieces.add(new StrdPiece(5, 2, 1));
     }
 
     public void checkPiece(int x, int y, int team) {
@@ -96,7 +98,15 @@ public class GridPanel extends JPanel{
  //
     public void checkMoves(Piece p) {
         // check possible moves that a piece that is clicked can do.
-       
-
-}
+        int row, column, currentPlayer;
+        int selectedRow, selectedCol;
+        int teamType = 0;
+        ArrayList<Integer> legalMoves = new ArrayList();
+         legalMoves.add();
+      
+		if (teamType == 0)
+			System.out.println("yellow:  Make your move.");
+		else
+			System.out.println("cyan:  Make your move.");
+    }
 }
