@@ -25,5 +25,6 @@ public class Main extends JFrame{
     // main
     public static void main(String[] args){
         new Main();
+        
     }
 }

@@ -51,10 +51,32 @@ public class GridPanel extends JPanel{
     public void pieceInit(){
         // place down initial pieces in starting state (hardcoded)
         pieces.add(new StrdPiece(0, 7, 0));
-        pieces.add(new StrdPiece(1, 6, 1));
+        pieces.add(new StrdPiece(2, 7, 0));
+        pieces.add(new StrdPiece(3, 6, 0));
+        pieces.add(new StrdPiece(4, 7, 0));
+        pieces.add(new StrdPiece(5, 6, 0));
+        pieces.add(new StrdPiece(6, 7, 0));
+        pieces.add(new StrdPiece(0, 5, 0));
+        pieces.add(new StrdPiece(2, 5, 0));
+        pieces.add(new StrdPiece(4, 5, 0));
+        pieces.add(new StrdPiece(7, 6, 0));
+        pieces.add(new StrdPiece(1, 6, 0));
+        pieces.add(new StrdPiece(6, 5, 0));
+        // yellow
+        pieces.add(new StrdPiece(0, 1, 1));
+        pieces.add(new StrdPiece(1, 0, 1));
+        pieces.add(new StrdPiece(1, 2, 1));
+        pieces.add(new StrdPiece(2, 1, 1));
+        pieces.add(new StrdPiece(3, 0, 1));
+        pieces.add(new StrdPiece(3, 2, 1));
+        pieces.add(new StrdPiece(4, 1, 1));
+        pieces.add(new StrdPiece(5, 0, 1));
+        pieces.add(new StrdPiece(6, 1, 1));
+        pieces.add(new StrdPiece(7, 0, 1));
+        pieces.add(new StrdPiece(7, 2, 1));
     }
 
-    public boolean checkPiece(int x, int y, int team){
+    public void checkPiece(int x, int y, int team) {
         //check if piece exists in the ArrayList of Pieces.
 
     }
@@ -71,11 +93,10 @@ public class GridPanel extends JPanel{
         }
     }
 
-    
-
-    public byte checkMoves(Piece p){
+ //
+    public void checkMoves(Piece p) {
         // check possible moves that a piece that is clicked can do.
+       
 
-    }
-
+}
 }
