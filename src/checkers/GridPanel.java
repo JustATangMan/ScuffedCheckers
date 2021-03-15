@@ -56,7 +56,15 @@ public class GridPanel extends JPanel{
 
     public boolean checkPiece(int x, int y, int team){
         //check if piece exists in the ArrayList of Pieces.
-
+        for (int i = 0; i < pieces.size(); i++) {
+            //i gets index
+            //p is the piece within <pieces> for testing
+            Piece p = pieces.get(i);
+            if (x == p.getX() && y == p.getY()) && team == p.getTeam() {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void paintPieces(Graphics g){
@@ -75,6 +83,8 @@ public class GridPanel extends JPanel{
 
     public byte checkMoves(Piece p){
         // check possible moves that a piece that is clicked can do.
+    
+        
 
     }
 
